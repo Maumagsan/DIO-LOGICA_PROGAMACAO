@@ -51,3 +51,44 @@ console.log("muita fome")
 console.log("Você comeria mais que o pica pau")
 }
 ```
+
+O código que você escreveu tem alguns pequenos erros de lógica nas condições dos `if` e `else if`. Aqui está uma versão corrigida:
+
+```javascript
+let heroi = "Ichigo Kurosaki";
+let xp = parseInt(prompt("Digite sua pontuação: "));
+let rank = [
+    "Ferro",
+    "Bronze",
+    "Prata",
+    "Ouro",
+    "Platina",
+    "Ascendente",
+    "Imortal",
+    "Radiante"
+];
+
+if (xp < 1000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[0]}`);
+} else if (xp < 2000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[1]}`);
+} else if (xp < 5000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[2]}`);
+} else if (xp < 7000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[3]}`);
+} else if (xp < 8000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[4]}`);
+} else if (xp < 9000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[5]}`);
+} else if (xp < 10000) {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[6]}`);
+} else {
+    console.log(`O Herói de nome ${heroi} está com o XP de ${xp}, seu rank é ${rank[7]}`);
+}
+```
+
+### Correções feitas:
+1. **Condições lógicas**: Ajustei as condições para que sejam verificadas corretamente. Por exemplo, ao invés de usar `xp < 1001 || xp > 2000`, a condição correta seria `xp < 2000`.
+2. **Conversão de entrada**: Adicionei `parseInt` ao `prompt` para garantir que a entrada do usuário seja um número.
+
+Agora o código deve funcionar como esperado! Se precisar de mais alguma coisa, é só avisar.
